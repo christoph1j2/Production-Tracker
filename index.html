@@ -60,10 +60,10 @@
     <!---->
     <div class="dropdown-container m-5">
         <div id="d1" class="m-1">
-            <div class="card rounded-0 d-flex justify-content-center align-items-center" style="width: 10vw; height: 5vh; cursor: pointer;">
+            <div id="hdr" class="card rounded-0 d-flex justify-content-center align-items-center" style="width: 10vw; height: 5vh; cursor: pointer;">
                 <span>Station 1 Checklist <i>&#8595;</i></span>
             </div>
-            <div class="card rounded-0" style="width: 10vw; height: auto;">
+            <div id="content" class="card rounded-0" style="width: 10vw; height: auto;">
                 <form class="d-flex flex-column align-items-center">
                     <div>
                         <label for="d1p1">Process 1:</label>
@@ -85,10 +85,10 @@
             </div>
         </div>
         <div id="d2" class="m-1">
-            <div class="card rounded-0 d-flex justify-content-center align-items-center" style="width: 10vw; height: 5vh; cursor: pointer;">
+            <div id="hdr" class="card rounded-0 d-flex justify-content-center align-items-center" style="width: 10vw; height: 5vh; cursor: pointer;">
                 <span>Station 2 Checklist <i>&#8595;</i></span>
             </div>
-            <div class="card rounded-0" style="width: 10vw; height: auto;">
+            <div id="content" class="card rounded-0" style="width: 10vw; height: auto;">
                 <form class="d-flex flex-column align-items-center">
                     <div>
                         <label for="d2p1">Process 1:</label>
@@ -111,11 +111,12 @@
         </div>
     </div>
     <script src="checkboxes.js"></script>
+    <script src="dropdown.js"></script>
     <script>
-
-        
         checklist('d1','l1','s1');
+        dropdown('d1');
         checklist('d2','l2','s2');
+        dropdown('d2');
     </script>
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
